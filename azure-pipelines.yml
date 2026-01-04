@@ -37,4 +37,5 @@ stages:
             provider: 'azurerm'
             command: 'apply'
             workingDirectory: '$(System.DefaultWorkingDirectory)/env'
+            environmentServiceNameAzureRM: 'infra'
         
