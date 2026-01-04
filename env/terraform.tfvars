@@ -13,9 +13,9 @@ my_rg = {
 
 my_vnet = {
   "vnet1" = {
-    name                = "BEL_VNET_PROD"
+    name                = "BEL_VNET_RG"
     location            = "Central India"
-    resource_group_name = "BEL_RG_PROD"
+    resource_group_name = "BEL_RG_DEV"
     address_space       = ["10.0.0.0/16"]
   }
 
