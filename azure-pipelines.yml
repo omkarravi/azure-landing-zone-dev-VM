@@ -7,7 +7,7 @@ pool: my-pool
 name: docker-agent
 
 stages:
-  - stage: Create Infra
+  - stage: Create_Infra
     displayName: create a Dev VM
     jobs:
       - job: init
