@@ -38,4 +38,12 @@ stages:
             command: 'apply'
             workingDirectory: '$(System.DefaultWorkingDirectory)/env'
             environmentServiceNameAzureRM: 'infra'
+
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'destroy'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/env'
+            commandOptions: '-auto-approve'
+            environmentServiceNameAzureRM: 'infra'
         
